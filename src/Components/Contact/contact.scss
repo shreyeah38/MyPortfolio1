@@ -1,0 +1,133 @@
+:root{
+    --primaryColor : #ddd0c8;
+    --greyColor : #323232;
+    --headerHeight : 3rem;
+}
+.contact{
+    .contactContainer{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .socialContacts{
+            justify-content: center;
+            h3{
+                color: var(--greyColor);
+                padding: 1rem 0;
+                text-align: center;
+
+            }
+            .cards{
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+                .card{
+                    display: grid;
+                    align-items: center;
+                    row-gap: 10px;
+                    padding: 1.5rem;
+                    width: 240px;
+                    background: green;
+                    border-radius: 10px;
+                    text-align: center;
+                    .icon{
+                        color: var(--greyColor);
+                    }
+                    h4{
+                        color: var(--greyColor);
+                        font-size: 18px;
+                    }
+                    .userName{
+                        color: var(--greyColor);
+                        font-weight: 600;
+                    }
+                    a{
+                        justify-content: center;
+                        gap: 5px;
+                        color: var(--greyColor);
+                        font-weight: 600;
+                        cursor: pointer;
+                        .icon{
+                            font-size: 20px;
+                        }
+                        &:hover{
+                            color: var(--greyColor);
+                            .icon{
+                                transform: translateX(10px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .form{
+            width: 100%;
+            justify-content: center;
+            margin: auto;
+            h3{
+                text-align: center;
+                color: var(--greyColor);
+            }
+            form{
+                width: 100%;
+                text-align: center;
+                input,textarea{
+                    height: 1rem;
+                    width: 85%;
+                    padding: 1.5rem .5rem;
+                    border-radius: 10px;
+                    background: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    border: 2px solid red;
+                    margin: .5rem 0;
+                    outline: none;
+                    color: var(--greyColor);
+                    font-weight: 600;
+                    &::placeholder{
+                        color: var(--greyColor);
+                        opacity: .5;
+                    }
+                }
+                textarea{
+                    height: 150px;
+                }
+                .formBtn{
+                    display: block;
+                    margin: auto;
+                    width: 90%;
+                    border: none;
+                    padding: 1rem 0;
+                    background: grey;
+                    color: var(--greyColor);
+                    font-weight: 600;
+                    cursor: pointer;
+                    &:hover{
+                        background: blueviolet;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 640px) {
+    .cards{
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width: 1150px) {
+    .contact{
+       .contactContainer{
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start !important;
+       }
+    }
+}
+@media screen and (min-width: 1240px) {
+    .contact{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

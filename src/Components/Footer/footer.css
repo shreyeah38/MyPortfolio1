@@ -1,0 +1,19 @@
+:root {
+  --primaryColor: #ddd0c8;
+  --greyColor: #323232;
+  --headerHeight: 3rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background: green;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.footer span {
+  text-align: center;
+  color: var(--greyColor);
+  opacity: 0.5;
+  font-size: 15px;
+}/*# sourceMappingURL=footer.css.map */

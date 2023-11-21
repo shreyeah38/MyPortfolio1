@@ -1,0 +1,111 @@
+:root{
+    --primaryColor : #ddd0c8;
+    --greyColor : #323232;
+    --headerHeight : 3rem;
+}
+.projects {
+    .projectContainer {
+        margin-top: 1rem;
+        justify-content: space-between;
+        grid-template-columns: repeat (1,1fr);
+        gap: 1rem;
+        .singleProject {
+            display: grid;
+            gap: .5rem;
+            padding: 1.5rem 1rem;
+            border-radius: 10px;
+            height: 100%;
+            background: pink;
+
+            .externalLinks{
+                width: 100%;
+                justify-content: space-between;
+                .youtubeIcon, .githubIcon{
+                    a{
+                        color: var(--greyColor);
+                        &:hover{
+                            color: var(--greyColor);
+                        }
+                    }
+                }
+            }
+            &:hover{
+                transform: translateY(-7px);
+                border-bottom: 2px solid red;
+            }
+            .imgDiv{
+                height: 150px;
+                width: auto;
+                border-radius: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                img{
+                    height:100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+            .project Title{
+                display: flex;
+                font-weight:600 ;
+                color: var(--textColor);
+            }
+             
+            .desc{
+                font-weight: 600;
+                color: var(--greyColor);
+            }
+            .technologies{
+                gap: .5rem;
+                justify-content: flex-end;
+                small{
+                    color: var(--greyColor);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    .projects{
+        .projectContainer{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    .projects{
+        margin: 70%;
+        margin: auto;
+        .projectContainer{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .projects{
+        
+        .projectContainer{
+            grid-template-columns: repeat(3,1fr);
+            .singleProject{
+                .desc{
+                    font-size: 17px;
+                    .technologies{
+                        small{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 600px) {
+    .projectContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

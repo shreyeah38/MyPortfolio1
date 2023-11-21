@@ -1,0 +1,197 @@
+:root {
+  --primaryColor: #ddd0c8;
+  --hover: #ffffffaa;
+  --greyColor: #323232;
+  --lightGreyColor: #636161;
+  --headerHeight: 3rem;
+}
+
+.home .homeContainer {
+  padding: 4rem 1.5rem;
+}
+.home .homeContainer .introText {
+  font-size: 1.3rem;
+  color: var(--greyColor);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.home .homeContainer .title {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: var(--greyColor);
+  padding: 0.7rem 0;
+}
+.home .homeContainer .subTitle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--greyColor);
+  line-height: 2rem;
+  padding: 0.5rem 0;
+}
+.home .homeContainer .homeParagraph {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  color: var(--lightGreyColor);
+  padding: 1rem 0;
+  max-width: 600px;
+}
+.home .homeContainer .lowerHomeSection .contactBtn {
+  padding: 0.6rem 1rem;
+  background: rgba(51, 51, 51, 0.8078431373);
+  border: 1px solid var(--greyColor);
+  border-radius: 35px;
+  outline: none;
+}
+.home .homeContainer .lowerHomeSection .contactBtn:hover {
+  background: var(--primaryColor);
+  color: var(--greyColor);
+}
+.home .homeContainer .lowerHomeSection .contactBtn a {
+  font-size: 14px;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--primaryColor);
+}
+.home .homeContainer .lowerHomeSection .scrollDiv {
+  padding-top: 1rem;
+  margin-left: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.home .homeContainer .lowerHomeSection .scrollDiv .scroll {
+  font-size: 1rem;
+  color: black;
+}
+.home .homeContainer .lowerHomeSection .scrollDiv .icon {
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+  color: black;
+  animation: move 0.5s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.home .leftIcons, .home .rightEmail {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.5rem;
+  }
+  .home .homeContainer .title {
+    font-size: 3.5rem;
+  }
+  .home .homeContainer .subTitle {
+    font-size: 1.7rem;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.2rem;
+  }
+  .home .homeContainer .lowerHomeSection .contactBtn {
+    padding: 0.8rem 1.5rem;
+  }
+  .home .homeContainer .lowerHomeSection .contactBtn a {
+    font-size: 18px;
+  }
+  .home .homeContainer .scrollDiv {
+    padding-top: 1.5rem;
+  }
+  .home .homeContainer .scrollDiv .icon {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home .homeContainer {
+    padding: 5rem 1.5rem;
+    width: 70%;
+    margin: auto;
+  }
+  .home .leftIcons, .home .rightEmail {
+    display: block;
+    position: fixed;
+  }
+  .home .leftIcons .icon, .home .rightEmail .icon {
+    color: var(--greyColor);
+  }
+  .home .leftIcons a, .home .rightEmail a {
+    font-weight: 600;
+    color: var(--greyColor);
+  }
+  .home .leftIcons .line, .home .rightEmail .line {
+    margin: auto;
+    content: "";
+    background: yellow;
+    height: 100px;
+    width: 1px;
+  }
+  .home .leftIcons {
+    left: 5%;
+    bottom: 0;
+  }
+  .home .leftIcons .socials {
+    gap: 1rem;
+  }
+  .home .leftIcons .socials a {
+    color: #323232;
+  }
+  .home .leftIcons .socials a:hover {
+    color: #323232;
+  }
+  .home .rightEmail {
+    /* margin-left: 2rem; */
+    right: -37px;
+    bottom: 0;
+  }
+  .home .rightEmail .emailAddress {
+    transform: rotate(90deg) translate(-90px, 0px);
+  }
+  .home .rightEmail .emailAddress a {
+    letter-spacing: 1px;
+    color: #323232;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home .homeContainer {
+    padding: 6rem;
+  }
+  .home .homeContainer .introText {
+    font-size: 1.9rem;
+  }
+  .home .homeContainer .title {
+    font-size: 4.7rem;
+  }
+  /* .home .homeContainer .scrollDiv .scroll a{
+    font-size: 2rem;
+  } */
+  .home .homeContainer .subTitle {
+    line-height: 2.5rem;
+    font-size: 2.4rem;
+  }
+  .home .homeContainer .lowerHomeSection .contactBtn a {
+    font-size: 25px;
+  }
+  .home .homeContainer .homeParagraph {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,133 @@
+:root {
+  --primaryColor: #ddd0c8;
+  --greyColor: #323232;
+  --headerHeight: 3rem;
+}
+
+.contact .contactContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.contact .contactContainer .socialContacts {
+  justify-content: center;
+}
+.contact .contactContainer .socialContacts h3 {
+  color: var(--greyColor);
+  padding: 1rem 0;
+  text-align: center;
+}
+.contact .contactContainer .socialContacts .cards {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contactContainer .socialContacts .cards .card {
+  display: grid;
+  align-items: center;
+  row-gap: 10px;
+  padding: 1.5rem;
+  width: 240px;
+  background: green;
+  border-radius: 10px;
+  text-align: center;
+}
+.contact .contactContainer .socialContacts .cards .card .icon {
+  color: var(--greyColor);
+}
+.contact .contactContainer .socialContacts .cards .card h4 {
+  color: var(--greyColor);
+  font-size: 18px;
+}
+.contact .contactContainer .socialContacts .cards .card .userName {
+  color: var(--greyColor);
+  font-weight: 600;
+}
+.contact .contactContainer .socialContacts .cards .card a {
+  justify-content: center;
+  gap: 5px;
+  color: var(--greyColor);
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact .contactContainer .socialContacts .cards .card a .icon {
+  font-size: 20px;
+}
+.contact .contactContainer .socialContacts .cards .card a:hover {
+  color: var(--greyColor);
+}
+.contact .contactContainer .socialContacts .cards .card a:hover .icon {
+  transform: translateX(10px);
+}
+.contact .contactContainer .form {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.contact .contactContainer .form h3 {
+  text-align: center;
+  color: var(--greyColor);
+}
+.contact .contactContainer .form form {
+  width: 100%;
+  text-align: center;
+}
+.contact .contactContainer .form form input, .contact .contactContainer .form form textarea {
+  height: 1rem;
+  width: 85%;
+  padding: 1.5rem 0.5rem;
+  border-radius: 10px;
+  background: none;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 2px solid red;
+  margin: 0.5rem 0;
+  outline: none;
+  color: var(--greyColor);
+  font-weight: 600;
+}
+.contact .contactContainer .form form input::-moz-placeholder, .contact .contactContainer .form form textarea::-moz-placeholder {
+  color: var(--greyColor);
+  opacity: 0.5;
+}
+.contact .contactContainer .form form input::placeholder, .contact .contactContainer .form form textarea::placeholder {
+  color: var(--greyColor);
+  opacity: 0.5;
+}
+.contact .contactContainer .form form textarea {
+  height: 150px;
+}
+.contact .contactContainer .form form .formBtn {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: none;
+  padding: 1rem 0;
+  background: grey;
+  color: var(--greyColor);
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact .contactContainer .form form .formBtn:hover {
+  background: blueviolet;
+}
+
+@media screen and (min-width: 640px) {
+  .cards {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .contact .contactContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start !important;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

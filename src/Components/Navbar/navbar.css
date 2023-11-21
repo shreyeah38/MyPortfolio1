@@ -1,0 +1,126 @@
+:root {
+  --primaryColor: #ddd0c8;
+  --greyColor: #323232;
+  --headerHeight: 3rem;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 2rem;
+  z-index: 1000;
+  background: green;
+}
+.header .logo a {
+  color: var(--greyColor);
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    background: greenyellow;
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+    top: -100rem;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    z-index: 1000;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 1rem 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--greyColor);
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .navLists .btn {
+    margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn a {
+    color: var(--greyColor);
+  }
+  .header .navBar .closeNavBar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .header .navBar .closeNavBar:hover .icon {
+    color: var(--primaryColor);
+  }
+  .header .activeNavbar {
+    top: 6rem;
+  }
+}
+
+.activeHeader {
+  background-color: #ddd0c8;
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavBar, .closeNavBar {
+    display: none;
+  }
+  .header {
+    padding: 2.5rem 2rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 1rem;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--greyColor);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: green;
+  }
+  .header .navBar .navLists .navItem .navLink .headerNumber {
+    color: aqua;
+  }
+  .header .navBar .navLists .btn {
+    margin-left: 1rem;
+  }
+  .header .navBar .navLists .btn a {
+    color: #ddd0c8;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header {
+    padding: 2.5rem 5rem;
+  }
+  .header .navBar .navLists {
+    padding: 0 2rem;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */
